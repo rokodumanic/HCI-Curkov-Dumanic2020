@@ -1,11 +1,33 @@
 .container {
     display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    background-color: #1f232b;
+    align-items: center;
 }
 
 .left {
-    justify-content: left;
+    text-align: left;
 }
 
-.right {
-    justify-content: right;
+.white {
+    color: white
 }
+
+.grey * {
+    color: grey;
+    padding-right: 5px;
+}
+.grey *:not(:first-child) {
+    margin-right: 5px;
+    border-left: 1px solid black;
+    padding-left: 5px;
+    
+}
+.right {
+    text-align: right;
+    width: 400px;
+}
+ .right > * {
+     margin-left: 10px;
+ }
