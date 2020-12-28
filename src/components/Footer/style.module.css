@@ -1,0 +1,58 @@
+.footer {
+    justify-content: space-evenly;
+    background-color: #333;
+    padding: 40px 20px;
+    display: flex;
+    color: white;
+    font-size: 16px;
+    align-content: center;
+}
+
+
+
+
+.footer .address {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.phone {
+    margin: 11px 0;
+}
+
+.navigation {
+    padding-top: 15px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.navigation span {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.navigation span:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.footreLeft {
+    text-align: center;
+    width: 33%;
+}
+
+.footerCenter {
+    text-align: center;
+    width: 34%;
+}
+
+.footerRight {
+    text-align: center;
+    width: 33%;
+}
+
+.mailinput ::placeholder{
+    text-align: center;
+}
