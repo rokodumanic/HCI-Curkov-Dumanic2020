@@ -23,11 +23,13 @@ const Footer = () => (
         <div className={styles.footerCenter}>
             <h3 className={styles.title}>OPG TABAR</h3>
             <ul className={styles.address}><li>Izmisljena ulica</li>
-            <li>Izmisljen grad</li>
-            <li className={styles.phone}>
-                +385 98 765 4321
-            </li>
-            <li>info@opgtabar.hr</li>
+                <li>Izmisljen grad</li>
+                <li className={styles.phone}>
+                    <a href="tel:+385 98 765 4321">+385 98 765 4321</a>
+                </li>
+                <li>
+                    <a href="mailto:info@opgtabar.hr">info@opgtabar.hr</a>
+                </li>
             </ul>
         </div>
         <div className={styles.footerRight}>
