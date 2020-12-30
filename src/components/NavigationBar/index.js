@@ -1,20 +1,24 @@
 import React from 'react'
+import { navs as navTabs } from '../../constants/const'
+import { Link } from 'gatsby'
+import { FaSearch } from 'react-icons/fa'
 
 import styles from './style.module.css'
 
 const NavigationBar = () => (
-    <div className={styles.container}>
-       <div className={styles.logo}>
+    <header className={styles.container}>
+       <div className={styles.left}>
+           <span>OPG TABAR</span>
        </div>
-       <div className={styles.navs}>
-           <span>NASLOVNICA</span>
-           <span>PROIZVODI</span>
-           <span>NOVOSTI</span>
-           <span>GALERIJA</span>
-           <span>O NAMA</span>
-           <span>KONTAKT</span>
+       <div className={styles.right}>
+            {navTabs.map(({tab, to}) => (
+                <Link to={to}>
+                    <span>{tab}</span>
+                </Link>)
+            )}
+            <FaSearch style={{marginBottom: '-2px'}}/>
         </div>
-    </div>
+    </header>
   )
   
   export default NavigationBar

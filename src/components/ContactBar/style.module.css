@@ -1,9 +1,12 @@
 .container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 40px;
     background-color: #1f232b;
     align-items: center;
+    font-size: 13px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .left {
@@ -28,6 +31,23 @@
     text-align: right;
     width: 400px;
 }
- .right > * {
-     margin-left: 10px;
- }
+.right > * {
+    margin-left: 10px;
+}
+
+.icons :hover {
+    fill : blanchedalmond;
+}
+
+
+@media only screen and (max-width: 600px){ 
+    .container {
+        display: block;
+        height: 70px;
+    }
+    .right, .left {
+        text-align: center;
+        width: auto;
+        padding: 3px;
+    }
+} 

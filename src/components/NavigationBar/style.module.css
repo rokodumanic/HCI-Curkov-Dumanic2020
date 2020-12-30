@@ -1,6 +1,28 @@
+header {
+    position: sticky;
+    top: 0;
+}
+
 .container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: #ffffff;
     align-items: center;
+    font-size: 14px;
+    font-weight: 750;
+}
+
+.right {
+    text-transform: uppercase;
+    text-align: right;
+    width: auto;
+    padding: 20px;
+}
+.right > * {
+    margin-left: 30px;
+}
+
+
+.left {
+    text-align: left;
 }
