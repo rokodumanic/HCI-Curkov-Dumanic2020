@@ -43,7 +43,7 @@ const Footer = () => (
         </div>
         <div className={styles.newsletter}>
             <h4>NEWSLETTER</h4>
-            <p>Unesite svoju adresu elektronicke poste da ne bi propustili novosti.</p>
+            <p>Unesite svoju adresu elektroničke pošte da ne bi propustili novosti.</p>
             <br></br>
             <input type="text" class="mailinput" placeholder="Vaša adresa" ></input>
             <br></br>
