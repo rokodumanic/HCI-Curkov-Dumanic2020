@@ -1,8 +1,8 @@
 export const navs = [
     {tab: 'Naslovnica', to: '/'},
-    {tab: 'Proizvodi', to: '/Proizvodi'}, 
-    {tab: 'Novosti', to: '/Novosti'}, 
-    {tab: 'Galerija', to: '/Galerija'},
-    {tab: 'O nama', to: '/O_nama'},
-    {tab: 'Kontakt', to: '/Kontakt'}
+    {tab: 'Proizvodi', to: '/proizvodi'}, 
+    {tab: 'Novosti', to: '/novosti'}, 
+    {tab: 'Galerija', to: '/galerija'},
+    {tab: 'O nama', to: '/o_nama'},
+    {tab: 'Kontakt', to: '/kontakt'}
 ]

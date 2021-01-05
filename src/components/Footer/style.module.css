@@ -1,11 +1,9 @@
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 900px) {
     .footer {
-        justify-content: center;
+        justify-content: center !important;
     }
-        
     .contact, .newsletter{
-        text-align: center;
-        align-content: center;    
+        text-align: center;    
     }
     .links {
         display: none;
