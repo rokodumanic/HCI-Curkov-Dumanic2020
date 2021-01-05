@@ -22,8 +22,9 @@ const IndexPage = () => {
     window.scrollTo({top: 0, behavior: 'smooth'});
   };
 
-  window.addEventListener('scroll', checkScrollTop)
-
+  if (typeof window !== `undefined`) {
+    window.addEventListener('scroll', checkScrollTop);
+  }
   return (
     <>
       <button className={styles.top} style={{display: showScroll ? 'block' : 'none'}} onClick={scrollTop}>^</button>
