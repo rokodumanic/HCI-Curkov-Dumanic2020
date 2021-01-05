@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './style.module.css'
 
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'
+
 import { navs as navTabs } from '../../constants/const'
 import { Link } from 'gatsby'
 import logo from '../../images/logo-under.png'
@@ -22,15 +24,20 @@ const Footer = () => (
         </div>
             <br></br>
         <div className={styles.contact}>
-            <img src={logo} className={styles.logoUnder}/>
+        <Link to="/"><img src={logo} className={styles.logoUnder}/></Link>
             
-            <ul className={styles.address}><li>Izmisljena ulica</li>
-                <li>Izmisljen grad</li>
+            <ul className={styles.address}>
+                <li>
+                    <FaMapMarkerAlt style={{ marginBottom: '-2px', color: '#6B8B3A' }}/>
+                    <span>      Izmisljena ulica, Izmisljen grad</span>
+                    </li>
                 <li className={styles.phone}>
-                    <a href="tel:+385 98 765 4321">+385 98 765 4321</a>
+                <FaPhoneAlt style={{ marginBottom: '-2px', color: '#6B8B3A' }}/>
+                    <a href="tel:+385 98 765 4321">     +385 98 765 4321</a>
                 </li>
                 <li>
-                    <a href="mailto:info@opgtabar.hr">info@opgtabar.hr</a>
+                    <FaEnvelope style={{ marginBottom: '-2px', color: '#6B8B3A' }}/>
+                    <a href="mailto:info@opgtabar.hr">      info@opgtabar.hr</a>
                 </li>
             </ul>
         </div>

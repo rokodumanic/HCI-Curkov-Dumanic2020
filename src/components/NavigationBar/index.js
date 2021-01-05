@@ -22,7 +22,7 @@ const NavigationBar = () =>  {
         <>
         <header className={styles.container}>
             <div className={styles.left}>
-            <a href="#"><img src={logo} className={styles.logoSide}/></a>
+            <Link to="/"><img src={logo} className={styles.logoSide}/></Link>
             </div>
             <div className={styles.right}>
                 {navTabs.map(({ tab, to }) => (
