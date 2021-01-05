@@ -1,10 +1,11 @@
-import React, { useState} from "react"
+import React, { useState } from "react"
 import Helmet from "react-helmet"
 import styles from './style.module.css'
 
 import ContactBar from "../components/ContactBar"
 import NavigationBar from "../components/NavigationBar"
 import Footer from "../components/Footer"
+
 
 const IndexPage = () => {
 
@@ -22,7 +23,9 @@ const IndexPage = () => {
     window.scrollTo({top: 0, behavior: 'smooth'});
   };
 
-  window.addEventListener('scroll', checkScrollTop)
+  if (typeof window !== `undefined`) {
+    window.addEventListener('scroll', checkScrollTop);
+  }
 
   return (
     <>
