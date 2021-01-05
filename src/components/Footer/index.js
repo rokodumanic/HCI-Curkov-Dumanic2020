@@ -33,17 +33,17 @@ const Footer = () => (
                     </li>
                 <li className={styles.phone}>
                 <FaPhoneAlt style={{ marginBottom: '-2px', color: '#6B8B3A' }}/>
-                    <a href="tel:+385 98 765 4321">     +385 98 765 4321</a>
+                    <a href="tel:+385 98 765 4321">      +385 98 765 4321</a>
                 </li>
                 <li>
                     <FaEnvelope style={{ marginBottom: '-2px', color: '#6B8B3A' }}/>
-                    <a href="mailto:info@opgtabar.hr">      info@opgtabar.hr</a>
+                    <a href="mailto:info@opgtabar.hr">     info@opgtabar.hr</a>
                 </li>
             </ul>
         </div>
         <div className={styles.newsletter}>
             <h4>NEWSLETTER</h4>
-            <p>Unesite svoju adresu elektroničke pošte da ne bi propustili novosti.</p>
+            <p>Unesite svoju adresu elektronicke poste da ne bi propustili novosti.</p>
             <br></br>
             <input type="text" class="mailinput" placeholder="Vaša adresa" ></input>
             <br></br>
