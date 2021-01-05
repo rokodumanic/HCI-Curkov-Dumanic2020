@@ -1,11 +1,9 @@
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 900px) {
     .footer {
-        justify-content: space-evenly;
+        justify-content: center !important;
     }
-        
     .contact, .newsletter{
-        text-align: center;
-        align-content: center;    
+        text-align: center;    
     }
     .links {
         display: none;
@@ -21,7 +19,7 @@ ul {
     padding:15px;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: #333;
     padding: 40px 20px;
     display: flex;
