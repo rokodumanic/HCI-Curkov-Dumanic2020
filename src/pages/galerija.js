@@ -32,7 +32,7 @@ const IndexPage = () => {
       <ContactBar />
       <NavigationBar/>
       <div style={{height: 1000, backgroundColor: "cyan"}}>
-        <span>OVO JE NASLOVNICA</span>
+        <span>SLIKA I SLIKA PUNOOOOOOOOOOOOOOOOOOOOOOOOO</span>
       </div>
       <Footer />
     </>
