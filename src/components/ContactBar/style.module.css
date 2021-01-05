@@ -1,3 +1,4 @@
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -40,7 +41,7 @@
 }
 
 
-@media only screen and (max-width: 600px){ 
+@media only screen and (max-width: 930px){ 
     .container {
         display: block;
         height: 70px;
@@ -50,4 +51,4 @@
         width: auto;
         padding: 3px;
     }
-} 
+}

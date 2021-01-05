@@ -5,18 +5,20 @@ header {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 930px;
+    margin: 0 auto;
     background-color: #ffffff;
     align-items: center;
     font-size: 14px;
     font-weight: 750;
+    padding: 20px;
 }
 
 .right {
     text-transform: uppercase;
     text-align: right;
     width: auto;
-    padding: 20px;
 }
 .right > * {
     margin-left: 30px;
@@ -25,4 +27,20 @@ header {
 
 .left {
     text-align: left;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 930px){ 
+    .hamburger {
+        display: inline-block;
+    }
+    .right {
+        display: none;
+    }
+    .container {
+        justify-content: space-between;
+    }
 }
