@@ -22,7 +22,7 @@ const NavigationBar = () =>  {
         <>
         <header className={styles.container}>
             <div className={styles.left}>
-                <span>OPG TABAR</span>
+            <img src={logo} className={styles.logoSide}/>
             </div>
             <div className={styles.right}>
                 {navTabs.map(({ tab, to }) => (
