@@ -33,6 +33,8 @@ header {
 
 .hamburger {
     display: none;
+    border: transparent;
+    background-color: transparent;
 }
 
 .logoSide {
@@ -55,8 +57,14 @@ header {
     list-style: none;
     text-transform: uppercase;
     background-color: #6B8B3A;
-    padding: 20px;
+    padding-bottom: 25px;
     width: 100%;
+    height: 100%;
+    font-size: 40px;
+}
+
+.links > * {
+    padding-top: 50px;
 }
 
 .rightNav {
@@ -65,8 +73,8 @@ header {
     transition: opacity 0.4s;
 }
 
-.toggle {
-
+.top {
+    font-size: 50px;
 }
 
 @keyframes fadeIn {

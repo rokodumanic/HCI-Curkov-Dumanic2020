@@ -22,7 +22,7 @@ const NavigationBar = () =>  {
         <>
         <header className={styles.container}>
             <div className={styles.left}>
-            <img src={logo} className={styles.logoSide}/>
+            <a href="#"><img src={logo} className={styles.logoSide}/></a>
             </div>
             <div className={styles.right}>
                 {navTabs.map(({ tab, to }) => (
@@ -33,7 +33,7 @@ const NavigationBar = () =>  {
                 <FaSearch className={styles.search} style={{ marginBottom: '-2px' }} />
             </div>
             <button className={styles.hamburger} onClick={toggleRightNav}>
-                <FaBars style={{ marginBottom: '-5px', height: '60px', width: '60px' }} />
+                <FaBars style={{ marginBottom: '-5px', height: '60px', width: '60px'}} />
             </button>  
         </header>
         {toggle}
