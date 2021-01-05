@@ -1,0 +1,30 @@
+.top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    height: 60px;
+    width: 60px;
+    border: #6B8B3A solid 1px;
+    border-radius: 15%;
+    background-color: #6B8B3A;
+    font-size: x-large;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.5;
+    font-weight: 700;
+}
+
+.top:hover {
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
