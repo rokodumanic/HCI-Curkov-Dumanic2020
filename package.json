@@ -28,7 +28,8 @@
     "react-social-icons": "^4.1.0",
     "react-typography": "^0.16.19",
     "styled-components": "^5.2.1",
-    "typography": "^0.16.19"
+    "typography": "^0.16.19",
+    "webpack": "^5.11.1"
   },
   "keywords": [
     "gatsby"
