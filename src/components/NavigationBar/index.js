@@ -5,12 +5,13 @@ import { FaSearch } from 'react-icons/fa'
 import { FaBars } from 'react-icons/fa'
 
 import styles from './style.module.css'
+import logo from '../../images/logo-side.png'
 
 const NavigationBar = () => (
     <header className={styles.container}>
-        <div className={styles.left}>
-            <span>OPG TABAR</span>
-        </div>
+        <a className={styles.left} href="#">
+            <img src={logo} className={styles.logoSide}/>
+        </a>
         <div className={styles.right}>
             {navTabs.map(({ tab, to }) => (
                 <Link to={to}>
