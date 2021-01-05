@@ -43,12 +43,20 @@
 
 @media only screen and (max-width: 930px){ 
     .container {
+        padding-top: 10px;
         display: block;
-        height: 70px;
+        height: 120px;
+        width: max-content;
     }
     .right, .left {
         text-align: center;
         width: auto;
-        padding: 3px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .grey *:not(:first-child){
+        display: block;
+        padding: 5px;
+        border-left: transparent;
     }
 }

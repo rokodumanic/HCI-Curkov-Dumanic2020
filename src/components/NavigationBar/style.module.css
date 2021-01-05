@@ -43,11 +43,33 @@ header {
         display: none;
     }
     .container {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 
-.logoSide {
-    width: auto;
-   
+.links {
+    list-style: none;
+    text-transform: uppercase;
+    background-color: #6B8B3A;
+    padding: 20px;
+    width: 100%;
 }
+
+.rightNav {
+    display: none;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+}
+
+.toggle {
+
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
