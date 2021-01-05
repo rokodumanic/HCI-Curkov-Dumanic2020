@@ -7,6 +7,7 @@ import { FaBars } from 'react-icons/fa'
 import Toggle from './rightNav'
 
 import styles from './style.module.css'
+import logo from '../../images/logo-side.png'
 
 const NavigationBar = () =>  {
     const [rightNav, setRightNav] = useState(false);

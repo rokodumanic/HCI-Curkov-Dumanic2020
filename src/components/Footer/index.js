@@ -3,25 +3,27 @@ import styles from './style.module.css'
 
 import { navs as navTabs } from '../../constants/const'
 import { Link } from 'gatsby'
+import logo from '../../images/logo-under.png'
 
 const Footer = () => (
     <footer className={styles.footer}>
 
-        <div className={styles.footerLeft}>
+        <div className={styles.links}>
             <ul className={styles.navigation}>
                 <h4 clssName={styles.istrazite}>ISTRAŽITE</h4>
                 <li>
                     {navTabs.map(({tab, to}) => (
                         <Link to={to}>
-                            <span>{tab}<br/></span>
+                            <a>{tab}<br/></a>
                         </Link>)
                     )}
                 </li>
             </ul>
         </div>
             <br></br>
-        <div className={styles.footerCenter}>
-            <h3 className={styles.title}>OPG TABAR</h3>
+        <div className={styles.contact}>
+            <img src={logo} className={styles.logoUnder}/>
+            
             <ul className={styles.address}><li>Izmisljena ulica</li>
                 <li>Izmisljen grad</li>
                 <li className={styles.phone}>
@@ -32,9 +34,9 @@ const Footer = () => (
                 </li>
             </ul>
         </div>
-        <div className={styles.footerRight}>
+        <div className={styles.newsletter}>
             <h4>NEWSLETTER</h4>
-            <a>Unesite svoju adresu elektroničke pošte da ne bi propustili novosti.</a>
+            <p>Unesite svoju adresu elektroničke pošte da ne bi propustili novosti.</p>
             <br></br>
             <input type="text" class="mailinput" placeholder="Vaša adresa" ></input>
             <br></br>

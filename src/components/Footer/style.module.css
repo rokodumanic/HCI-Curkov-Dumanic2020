@@ -1,15 +1,35 @@
+@media screen and (max-width: 930px) {
+    .footer {
+        justify-content: space-evenly;
+    }
+        
+    .contact, .newsletter{
+        text-align: center;
+        align-content: center;    
+    }
+    .links {
+        display: none;
+    }
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 .footer {
-    justify-content: space-evenly;
+    padding:15px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     background-color: #333;
     padding: 40px 20px;
     display: flex;
     color: white;
     font-size: 16px;
     align-content: center;
+    min-width: 100%;
 }
-
-
-
 
 .footer .address {
     list-style: none;
@@ -18,40 +38,20 @@
     text-align: center;
 }
 
-.phone {
-    margin: 11px 0;
-}
-
 .navigation {
     padding-top: 15px;
     list-style: none;
     text-transform: uppercase;
 }
 
-.navigation span {
-    margin: 0 10px;
-    font-size: 16px;
-}
 
-.navigation span:hover {
-    border-bottom: 1px solid white;
-    cursor: pointer;
-}
-
-.footreLeft {
+.links, .contact, .newsletter {
     text-align: center;
-    width: 33%;
+    align-content: center;
+    padding: 15px;
+    max-width: 300px;
 }
 
-.footerCenter {
-    text-align: center;
-    width: 34%;
-}
-
-.footerRight {
-    text-align: center;
-    width: 33%;
-}
 
 .mailinput ::placeholder{
     text-align: center;
@@ -60,3 +60,10 @@
 a {
     color: inherit;
 }
+
+.logoUnder{
+    height: 76px;
+    width: auto;
+    align-content: center;
+}
+
