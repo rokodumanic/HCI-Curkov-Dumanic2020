@@ -33,11 +33,11 @@ const Footer = () => (
                     </li>
                 <li className={styles.phone}>
                 <FaPhoneAlt style={{ marginBottom: '-2px', color: '#6B8B3A' }}/>
-                    <a href="tel:+385 98 765 4321">     +385 98 765 4321</a>
+                    <a href="tel:+385 98 765 4321">      +385 98 765 4321</a>
                 </li>
                 <li>
                     <FaEnvelope style={{ marginBottom: '-2px', color: '#6B8B3A' }}/>
-                    <a href="mailto:info@opgtabar.hr">      info@opgtabar.hr</a>
+                    <a href="mailto:info@opgtabar.hr">     info@opgtabar.hr</a>
                 </li>
             </ul>
         </div>
