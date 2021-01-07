@@ -15,7 +15,7 @@ const RightNav = () => {
                 </Link>
             </li>)
         )}
-    </ul>
+      </ul>
   )
 }
 

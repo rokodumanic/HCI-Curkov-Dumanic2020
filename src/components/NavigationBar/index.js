@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { navs as navTabs } from '../../constants/const'
 import { Link } from 'gatsby'
 import { FaSearch } from 'react-icons/fa'
-import { FaBars } from 'react-icons/fa'
+import { FiMenu } from 'react-icons/fi'
+import { IoClose } from 'react-icons/io5'
 
 import Toggle from './rightNav'
 
@@ -12,14 +13,20 @@ import logo from '../../images/logo-side.png'
 const NavigationBar = () =>  {
     const [rightNav, setRightNav] = useState(false);
     let toggle;
+    let button;
 
     const toggleRightNav = () => rightNav === false ? setRightNav(true) : setRightNav(false);
     if(rightNav) {
         toggle = <Toggle style={styles.toggle}/>
+        button = <IoClose style={{ marginBottom: '-5px', height: '50px', width: '50px'}} />
+    }
+    else {
+        button = <FiMenu style={{ marginBottom: '-5px', height: '50px', width: '50px'}} />
     }
 
     return (
         <>
+        <div className={styles.sticky}>
         <header className={styles.container}>
             <div className={styles.left}>
             <Link to="/"><img src={logo} className={styles.logoSide}/></Link>
@@ -33,10 +40,12 @@ const NavigationBar = () =>  {
                 <FaSearch className={styles.search} style={{ marginBottom: '-2px' }} />
             </div>
             <button className={styles.hamburger} onClick={toggleRightNav}>
-                <FaBars style={{ marginBottom: '-5px', height: '60px', width: '60px'}} />
-            </button>  
+                {button}
+            </button>
+            
         </header>
         {toggle}
+        </div>
         </>
     )
 }

@@ -1,6 +1,7 @@
 import React, { useState} from "react"
 import Helmet from "react-helmet"
 import styles from './style.module.css'
+import { FaAngleUp } from 'react-icons/fa'
 
 import ContactBar from "../components/ContactBar"
 import NavigationBar from "../components/NavigationBar"
@@ -27,7 +28,9 @@ const IndexPage = () => {
   }
   return (
     <>
-      <button className={styles.top} style={{display: showScroll ? 'block' : 'none'}} onClick={scrollTop}>^</button>
+      <button className={styles.top} style={{display: showScroll ? 'block' : 'none'}} onClick={scrollTop}>
+        <FaAngleUp></FaAngleUp>
+      </button>
       <Helmet><title>OPG Tabar</title></Helmet>
 
       <ContactBar />
