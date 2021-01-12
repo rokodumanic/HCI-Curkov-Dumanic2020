@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { navs as navTabs } from '../../constants/const'
 import { Link} from 'gatsby'
-// import {useLocation } from 'react-dom'
 import { FaSearch } from 'react-icons/fa'
 import { FiMenu } from 'react-icons/fi'
 import { IoClose } from 'react-icons/io5'
@@ -35,7 +34,7 @@ const NavigationBar = (props) =>  {
             <div className={styles.right}>
                 {navTabs.map(({ tab, to }) => (
                     <Link to={to}>
-                        <span className={styles.selected}>{tab}</span>
+                        <span className={to === props.path ? styles.selected : ""}>{tab}</span>
                     </Link>)
                 )}
                 <FaSearch className={styles.search} style={{ marginBottom: '-2px' }} />
