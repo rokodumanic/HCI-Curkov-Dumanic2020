@@ -5,6 +5,7 @@ import styles from './style.module.css'
 import ContactBar from "../components/ContactBar"
 import NavigationBar from "../components/NavigationBar"
 import Footer from "../components/Footer"
+import Gallery from "../components/GalleryFill"
 
 
 const IndexPage = () => {
@@ -34,9 +35,7 @@ const IndexPage = () => {
 
       <ContactBar />
       <NavigationBar/>
-      <div style={{height: 1000, backgroundColor: "cyan"}}>
-        <span>SLIKA I SLIKA PUNOOOOOOOOOOOOOOOOOOOOOOOOO</span>
-      </div>
+      <Gallery />
       <Footer />
     </>
   )
