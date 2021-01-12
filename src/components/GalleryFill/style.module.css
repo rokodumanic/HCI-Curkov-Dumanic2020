@@ -1,0 +1,15 @@
+.block > * > * > * {
+    padding: 5px;
+    z-index: 1;
+}
+
+.block {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.block > * > * >*:hover {
+    transform: scale(1.01);
+    transition: transform .2s;
+}
+

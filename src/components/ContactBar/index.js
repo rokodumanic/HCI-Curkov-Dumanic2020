@@ -13,10 +13,10 @@ const ContactBar = () => (
            </span>
        </div>
        <div className={styles.right}>
-           <SocialIcon url="facebook.com" className={styles.icons} style={{ height: 25, width: 25 }}/>
-           <SocialIcon url="twitter.com" className={styles.icons} style={{ height: 25, width: 25 }}/>
-           <SocialIcon url="instagram.com" className={styles.icons} style={{ height: 25, width: 25 }}/>
-           <SocialIcon url="youtube.com" className={styles.icons} style={{ height: 25, width: 25 }}/>
+           <SocialIcon url="https://facebook.com" className={styles.icons} style={{ height: 25, width: 25 }}/>
+           <SocialIcon url="https://twitter.com" className={styles.icons} style={{ height: 25, width: 25 }}/>
+           <SocialIcon url="https://instagram.com" className={styles.icons} style={{ height: 25, width: 25 }}/>
+           <SocialIcon url="https://youtube.com" className={styles.icons} style={{ height: 25, width: 25 }}/>
         </div>
     </div>
   )

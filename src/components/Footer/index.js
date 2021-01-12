@@ -24,7 +24,7 @@ const Footer = () => (
         </div>
             <br></br>
         <div className={styles.contact}>
-        <Link to="/"><img src={logo} className={styles.logoUnder}/></Link>
+        <Link to="/"><img src={logo} className={styles.logoUnder} alt="OPG Tabar"/></Link>
             
             <ul className={styles.address}>
                 <li>

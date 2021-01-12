@@ -29,7 +29,7 @@ const NavigationBar = () =>  {
         <div className={styles.sticky}>
         <header className={styles.container}>
             <div className={styles.left}>
-            <Link to="/"><img src={logo} className={styles.logoSide}/></Link>
+            <Link to="/"><img src={logo} className={styles.logoSide} alt="OPG Tabar"/></Link>
             </div>
             <div className={styles.right}>
                 {navTabs.map(({ tab, to }) => (
