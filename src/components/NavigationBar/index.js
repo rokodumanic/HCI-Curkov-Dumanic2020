@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { navs as navTabs } from '../../constants/const'
-import { Link } from 'gatsby'
+import { Link} from 'gatsby'
+// import {useLocation } from 'react-dom'
 import { FaSearch } from 'react-icons/fa'
 import { FiMenu } from 'react-icons/fi'
 import { IoClose } from 'react-icons/io5'
@@ -10,7 +11,7 @@ import Toggle from './rightNav'
 import styles from './style.module.css'
 import logo from '../../images/logo-side.png'
 
-const NavigationBar = () =>  {
+const NavigationBar = (props) =>  {
     const [rightNav, setRightNav] = useState(false);
     let toggle;
     let button;
@@ -34,7 +35,7 @@ const NavigationBar = () =>  {
             <div className={styles.right}>
                 {navTabs.map(({ tab, to }) => (
                     <Link to={to}>
-                        <span>{tab}</span>
+                        <span className={styles.selected}>{tab}</span>
                     </Link>)
                 )}
                 <FaSearch className={styles.search} style={{ marginBottom: '-2px' }} />

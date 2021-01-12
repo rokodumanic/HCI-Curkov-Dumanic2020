@@ -7,6 +7,7 @@ import NavigationBar from "../components/NavigationBar"
 import Footer from "../components/Footer"
 import Gallery from "../components/GalleryFill"
 
+import { Fade } from "@material-ui/core"
 
 const IndexPage = () => {
 
@@ -35,9 +36,14 @@ const IndexPage = () => {
 
       <ContactBar />
       <NavigationBar/>
-      <Gallery />
+      <Fade in={true}>
+        <div>
+          <Gallery />
+        </div>
+      </Fade>
       <Footer />
     </>
+    
   )
 }
 

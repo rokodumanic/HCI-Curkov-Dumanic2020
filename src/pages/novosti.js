@@ -6,6 +6,8 @@ import ContactBar from "../components/ContactBar"
 import NavigationBar from "../components/NavigationBar"
 import Footer from "../components/Footer"
 
+import { Fade } from "@material-ui/core"
+
 const IndexPage = () => {
 
   const [showScroll, setShowScroll] = useState(false)
@@ -32,9 +34,11 @@ const IndexPage = () => {
 
       <ContactBar />
       <NavigationBar/>
-      <div style={{height: 1000, backgroundColor: "cyan"}}>
-        <div>OVDJE DOLAZE NOVOSTI I SVASTA</div>
-      </div>
+      <Fade in={true}>
+        <div style={{height: 1000, backgroundColor: "cyan"}}>
+          <div>OVDJE DOLAZE NOVOSTI I SVASTA</div>
+        </div>
+      </Fade>
       <Footer />
     </>
   )

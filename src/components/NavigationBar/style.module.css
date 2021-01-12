@@ -91,6 +91,12 @@
     z-index: 2;
 }
 
+.selected {
+    color: #6B8B3A;
+    border-bottom: #6B8B3A 2px solid;
+}
+
+
 @keyframes animateToggle {
     0% {
         opacity: 0;
