@@ -3,7 +3,7 @@ import styles from './style.module.css'
 
 const IndexPage = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <iframe className={styles.map} src="https://www.google.com/maps/embed/v1/place?key=AIzaSyADGAutWLrWQWAOjOfpCHa2Up20BLNMvO8
           &q=Kaštel+Novi" allowfullscreen>
         </iframe>

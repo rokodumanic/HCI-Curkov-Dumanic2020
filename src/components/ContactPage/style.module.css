@@ -1,4 +1,19 @@
+.container {
+    margin: 0 auto;
+    justify-content: center;
+    height: 600px;
+    width: 900px;
+}
+
 .map {
-    height: 1000px;
-    width: max-content;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: auto;
+    }
 }
