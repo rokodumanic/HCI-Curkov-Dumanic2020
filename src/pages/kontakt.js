@@ -1,12 +1,11 @@
 import React from "react"
 import StandardPage from "../components/templates/StandardPage"
+import ContactPage from "../components/ContactPage"
 
 const IndexPage = props => {
   return (
     <StandardPage props={props}>
-      <div style={{ height: 1000, backgroundColor: "cyan" }}>
-        <span>OVO JE KONTAKT PAGE</span>
-      </div>
+      <ContactPage />
     </StandardPage>
   )
 }

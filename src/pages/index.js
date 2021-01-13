@@ -1,9 +1,9 @@
 import React from "react"
-import StandardPage from "../components/templates/StandardPage"
+import MainPage from "../components/templates/MainPage"
 
 const IndexPage = props => {
   return (
-    <StandardPage props={props}>
+    <MainPage props={props}>
       <div style={{ height: 1000, backgroundColor: "cyan" }}>
         <p>
           Dolor dolore dolor velit mollit laboris deserunt. Eiusmod ut dolor anim magna non ut ullamco excepteur laborum tempor sunt non qui. Ut irure aliquip ullamco exercitation eu labore est proident. Do pariatur id sit dolore eu reprehenderit sint eiusmod aliquip commodo reprehenderit exercitation. Excepteur et non cupidatat ut quis minim officia qui proident officia consectetur nulla eiusmod ipsum.
@@ -25,7 +25,7 @@ const IndexPage = props => {
           Fugiat sit minim nulla eu cillum proident veniam exercitation proident eu fugiat et. Veniam ad mollit tempor enim est labore duis nostrud anim cillum. Irure in eu ea esse laborum culpa reprehenderit.
         </p>
       </div>
-    </StandardPage>
+    </MainPage>
   )
 }
 

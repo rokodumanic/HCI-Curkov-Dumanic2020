@@ -1,13 +1,13 @@
 import React, { useState } from "react"
 import Gallery from "../components/GalleryFill"
-import StandardPage from "../components/templates/StandardPage"
+import MainPage from "../components/templates/MainPage"
 
 
 const IndexPage = props => {
   return (
-    <StandardPage props={props}>
+    <MainPage props={props}>
       <Gallery />
-    </StandardPage>
+    </MainPage>
   )
 }
 

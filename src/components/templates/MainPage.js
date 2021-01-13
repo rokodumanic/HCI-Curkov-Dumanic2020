@@ -6,7 +6,6 @@ import { FaAngleUp } from 'react-icons/fa'
 import ContactBar from "../ContactBar"
 import NavigationBar from "../NavigationBar"
 import Footer from "../Footer"
-import Panorama from "../../components/Panorama"
 
 import { Fade } from "@material-ui/core"
 
@@ -37,7 +36,6 @@ const StandardPage = (props) => {
 
       <ContactBar />
       <NavigationBar path={props.props.path}/>
-      <Panorama />
       <Fade in={true}>
         {
             props.children
