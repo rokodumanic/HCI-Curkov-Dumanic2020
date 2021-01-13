@@ -19,6 +19,9 @@
 .right > * {
     margin-left: 30px;
 }
+.right > *:hover :not(.selected) {
+    border-bottom: #6B8B3A 1px solid;
+}
 
 
 .left {

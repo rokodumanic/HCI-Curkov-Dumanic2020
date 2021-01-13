@@ -32,10 +32,13 @@ const NavigationBar = (props) =>  {
             <Link to="/"><img src={logo} className={styles.logoSide} alt="OPG Tabar"/></Link>
             </div>
             <div className={styles.right}>
-                {navTabs.map(({ tab, to }) => (
-                    <Link to={to}>
-                        <span className={to === props.path ? styles.selected : ""}>{tab}</span>
-                    </Link>)
+                {navTabs.map(({ tab, to }, index) => {
+                    console.log(to, props.path)
+                    return (
+                        <Link key={index} to={to}>
+                            <span className={to === props.path ? styles.selected : ""}>{tab}</span>
+                        </Link>)
+                }
                 )}
                 <FaSearch className={styles.search} style={{ marginBottom: '-2px' }} />
             </div>
