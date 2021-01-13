@@ -1,10 +1,12 @@
 import React from "react"
 import MainPage from "../components/templates/MainPage"
+import Carousel from "../components/Carousel"
 
 const IndexPage = props => {
   return (
     <MainPage props={props}>
       <div style={{ height: 1000, backgroundColor: "cyan" }}>
+      <Carousel />
         <p>
           Dolor dolore dolor velit mollit laboris deserunt. Eiusmod ut dolor anim magna non ut ullamco excepteur laborum tempor sunt non qui. Ut irure aliquip ullamco exercitation eu labore est proident. Do pariatur id sit dolore eu reprehenderit sint eiusmod aliquip commodo reprehenderit exercitation. Excepteur et non cupidatat ut quis minim officia qui proident officia consectetur nulla eiusmod ipsum.
         </p>
