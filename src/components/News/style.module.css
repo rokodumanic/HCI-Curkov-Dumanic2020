@@ -1,0 +1,39 @@
+.container{
+    border: #6b8b3a 1px solid;
+    width: auto;
+    padding: 3% 12%;
+    display: flex;
+    align-content: center;
+    height: 200px;
+    cursor: pointer;
+}
+
+.title{
+    color: #6b8b3a;
+    font-size: 25px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.spoiler {
+    padding-top: 7px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.date {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.src {
+    justify-content: left;
+    height: 100%;
+    width: 150px;
+    padding-right: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
