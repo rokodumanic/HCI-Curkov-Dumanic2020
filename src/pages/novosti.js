@@ -1,4 +1,4 @@
-import React, { useState} from "react"
+import React from "react"
 import StandardPage from "../components/templates/StandardPage"
 import News from "../components/News"
 
