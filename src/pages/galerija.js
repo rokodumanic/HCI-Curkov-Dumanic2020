@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import Gallery from "../components/GalleryFill"
 import MainPage from "../components/templates/MainPage"
 
