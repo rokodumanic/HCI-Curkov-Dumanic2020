@@ -1,12 +1,11 @@
 import React, { useState} from "react"
 import StandardPage from "../components/templates/StandardPage"
+import News from "../components/News"
 
 const IndexPage = props => {
   return (
     <StandardPage props={props}>
-      <div style={{ height: 1000, backgroundColor: "cyan" }}>
-        <span>OVO JE NASLOVNICA</span>
-      </div>
+      <News />
     </StandardPage>
   )
 }
