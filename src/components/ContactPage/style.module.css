@@ -3,12 +3,14 @@
     justify-content: center;
     height: 600px;
     width: 900px;
+    margin-bottom: 20px;
 }
 
 .map {
     display: flex;
     height: 100%;
     width: 100%;
+    padding: 5px;
 }
 
 
