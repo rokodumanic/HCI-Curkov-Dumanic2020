@@ -1,10 +1,10 @@
 .paralax {
-    background-image: url("../../images/panorama.jpg");
+    background-image: url("../../images/paralax.jpeg");
     height: 200px;
 
     /* Parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 
