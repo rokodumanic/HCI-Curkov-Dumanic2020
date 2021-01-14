@@ -5,12 +5,14 @@ import { news } from "../../constants/news";
 const News = () =>  {
     return (
         <div>
-            {news.map(({ src, title, text}, index) => {
+            {news.map(({ src, title, spoiler}, index) => {
                     return (
-                        <div>
-                        <img src = {src} title="news picture"/>
-                            <span >{title}</span>
-                            <p>{text}</p>
+                        <div className={styles.container}>
+                        <img className={styles.src} src={src} title="news picture"/>
+                            <div className={styles.content}>
+                                <span className={styles.title}>{title}</span>
+                                <p className={styles.spoiler}>{spoiler}</p>
+                            </div>
                         </div>
                         )
                     }

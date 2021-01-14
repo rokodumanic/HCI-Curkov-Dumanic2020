@@ -1,0 +1,33 @@
+.container{
+    padding: 3% 12%;
+    display: flex;
+    align-content: center;
+    height: 200px;
+    cursor: pointer;
+}
+
+.title{
+    color: #6b8b3a;
+    font-size: medium;
+    text-align: left;
+    font-weight: 700;
+}
+
+.spoiler {
+    padding-top: 5px;
+    font-size: small;
+    text-align: left;
+}
+
+.src {
+    /* display: flex; */
+    justify-content: left;
+    height: 100%;
+    width: 150px;
+    padding-right: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
