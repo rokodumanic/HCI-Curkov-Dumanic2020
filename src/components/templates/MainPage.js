@@ -30,7 +30,7 @@ const StandardPage = (props) => {
   return (
     <>
       <button className={styles.top} style={{display: showScroll ? 'block' : 'none'}} onClick={scrollTop}>
-        <FaAngleUp></FaAngleUp>
+        <FaAngleUp />
       </button>
       <Helmet><title>OPG Tabar</title></Helmet>
 
