@@ -1,5 +1,5 @@
-.paralax {
-    background-image: url("../../images/paralax.jpeg");
+.parallax {
+    background-image: url("../../images/parallax.jpeg");
     height: 200px;
 
     /* Parallax scrolling effect */
@@ -9,4 +9,10 @@
     background-size: cover;
 
     margin-bottom: 20px;
+}
+@media screen and (max-width: 900px) {
+	.parallax {
+        background-image: url("../../images/panorama.jpg");
+        height: 150px;
+	}
 }
