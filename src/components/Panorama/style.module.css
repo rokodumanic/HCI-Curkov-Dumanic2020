@@ -10,3 +10,9 @@
 
     margin-bottom: 20px;
 }
+@media screen and (max-width: 900px) {
+	.paralax {
+        background-image: url("../../images/panorama.jpg");
+        height: 150px;
+	}
+}
