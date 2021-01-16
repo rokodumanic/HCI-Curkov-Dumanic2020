@@ -1,5 +1,4 @@
 import React from "react"
-import StandardPage from "../../components/templates/StandardPage"
 
 import style from "./style.module.css"
 

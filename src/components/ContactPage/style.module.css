@@ -1,5 +1,10 @@
 .container {
     margin: 0 auto;
+    max-width: 1300px;
+}
+
+.fill {
+    margin: 0 auto;
     justify-content: center;
     height: 600px;
     width: 900px;
@@ -13,9 +18,43 @@
     padding: 5px;
 }
 
+.contacts {
+    padding:15px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+    display: flex;
+    font-size: 16px;
+    align-content: center;
+    min-width: 100%;
+}
+
+.inside {
+    text-align: center;
+    align-content: center;
+    padding: 15px;
+    max-width: 300px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.black {
+    color:black;
+    padding-right: 5px; 
+}
+
+.grey {
+    color: grey;
+}
+
 
 @media screen and (max-width: 900px) {
-    .container {
+    .fill {
         width: auto;
     }
 }
