@@ -33,7 +33,6 @@ const NavigationBar = (props) =>  {
             </div>
             <div className={styles.right}>
                 {navTabs.map(({ tab, to }, index) => {
-                    console.log(to, props.path)
                     return (
                         <Link key={index} to={to}>
                             <span className={to === props.path ? styles.selected : ""}>{tab}</span>
