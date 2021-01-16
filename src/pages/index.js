@@ -4,7 +4,7 @@ import MainPage from "../components/templates/MainPage"
 const IndexPage = props => {
   return (
     <MainPage props={props}>
-      <div style={{ height: 1000, backgroundColor: "cyan" }}>
+      <div style={{ height: 1000, backgroundColor: "cyan", maxWidth: 1300, margin: "0 auto" }}>
         <p>
           Dolor dolore dolor velit mollit laboris deserunt. Eiusmod ut dolor anim magna non ut ullamco excepteur laborum tempor sunt non qui. Ut irure aliquip ullamco exercitation eu labore est proident. Do pariatur id sit dolore eu reprehenderit sint eiusmod aliquip commodo reprehenderit exercitation. Excepteur et non cupidatat ut quis minim officia qui proident officia consectetur nulla eiusmod ipsum.
         </p>

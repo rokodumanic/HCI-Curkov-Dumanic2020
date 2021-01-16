@@ -4,6 +4,7 @@ import { SocialIcon } from 'react-social-icons'
 import styles from './style.module.css'
 
 const ContactBar = () => (
+    <div className={styles.bg}>
     <div className={styles.container}>
        <div className={styles.left}>
            <span className={styles.white}>KONTAKTIRAJTE NAS NA </span>
@@ -18,6 +19,7 @@ const ContactBar = () => (
            <SocialIcon url="https://instagram.com" className={styles.icons} style={{ height: 25, width: 25 }}/>
            <SocialIcon url="https://youtube.com" className={styles.icons} style={{ height: 25, width: 25 }}/>
         </div>
+    </div>
     </div>
   )
   

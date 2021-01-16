@@ -1,12 +1,15 @@
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 40px;
-    background-color: #1f232b;
     align-items: center;
     font-size: 13px;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.bg {
+    background-color: #1f232b;
 }
 
 .left {
@@ -83,5 +86,12 @@
     .right {
         text-align: center;
         margin-top: 7px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .container {
+        width: 1300px;
+        margin: 0 auto;
     }
 }

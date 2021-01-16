@@ -7,7 +7,6 @@ import style from "./style.module.css"
 
 
 const IndexPage = (props) => {
-    console.log(window.location.pathname);
   const item = news.find(i=>i.to === window.location.pathname);
   return (
     <StandardPage props={props}>

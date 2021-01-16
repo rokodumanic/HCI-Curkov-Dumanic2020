@@ -60,6 +60,13 @@
     }
 }
 
+@media only screen and (min-width: 1300px) {
+    .container {
+        width: 1300px;
+        margin: 0 auto;
+    }
+}
+
 .links {
     list-style: none;
     text-transform: uppercase;
@@ -93,6 +100,7 @@
     top: 0;
     position: sticky;
     z-index: 2;
+    background-color: white;
 }
 
 .selected {

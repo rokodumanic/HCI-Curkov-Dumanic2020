@@ -1,12 +1,12 @@
 import React from "react"
 import StandardPage from "../components/templates/StandardPage"
+import AboutUs from "../components/AboutUs"
+
 
 const IndexPage = props => {
   return (
     <StandardPage props={props}>
-      <div style={{ height: 1000, backgroundColor: "cyan" }}>
-        <span>OVO JE O NAMA</span>
-      </div>
+        <AboutUs />
     </StandardPage>
   )
 }
