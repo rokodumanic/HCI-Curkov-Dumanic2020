@@ -10,7 +10,7 @@ const News = () =>  {
                     return (
                         <Link key={index} to={to} state={{src, title, date, text}}>
                         <div className={styles.container}>
-                        <img className={styles.src} src={src} title="news picture"/>
+                        <img className={styles.src} src={src} alt="" title="news picture"/>
                             <div className={styles.content}>
                                 <span className={styles.title}>{title}</span>
                                 <span className={styles.date}>{date}</span>
