@@ -121,7 +121,7 @@ input:focus {
 @media screen and (max-width: 600px) {
     .fill {
         width: auto;
-        height: auto;
+        height: 300px;
     }
 }
 
