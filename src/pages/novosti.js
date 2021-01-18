@@ -11,9 +11,9 @@ const IndexPage = props => {
     <>
     {/* {!isSSR && ( */}
       <StandardPage props={props}>
-        <React.Suspense fallback={<div>--- LOADING ---</div>}>
+        {/* <React.Suspense fallback={<div>--- LOADING ---</div>}> */}
           <News />
-        </React.Suspense>
+        {/* </React.Suspense> */}
       </StandardPage>
       {/* )} */}
     </>

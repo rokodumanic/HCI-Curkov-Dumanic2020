@@ -5,7 +5,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaComment, FaFlag, FaUser } fro
 
 
 const API_URL = process.env.GATSBY_GOOGLE_URL
-// const API_KEY = process.env.GATSBY_GOOGLE_API
+const API_KEY = process.env.GATSBY_GOOGLE_API
 const API_KEY = "apikey"
 const API_QUERY = "Kaštel+Novi"
 
