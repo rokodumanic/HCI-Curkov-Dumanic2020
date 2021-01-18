@@ -9,6 +9,7 @@
     height: 600px;
     width: 900px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .map {
@@ -16,6 +17,7 @@
     height: 100%;
     width: 100%;
     padding: 5px;
+    border-radius: 10px;
 }
 
 .contacts {
@@ -68,16 +70,29 @@ li {
     margin: 0 auto;
 }
 
-.form > input {
+.input {
+    padding-left: 25px;
     border: grey 1px solid;
+    border-radius: 10px;
+    align-content: left;
+    vertical-align: text-top;
+    resize: both;
+    overflow: auto;
 }
-.form > input:focus {
+
+input:focus {
     border: grey 2px solid;
+}
+
+.input.i4 {
+    padding-bottom:5em;
+    resize:both;
 }
 
 .i1, .i2, .i3 {
     grid-column-start: 1;
     grid-column-end: 2;
+    max-height: fit-content;
 }
 .i4 {
     grid-column-start: 2;
@@ -96,12 +111,20 @@ li {
     grid-row-end: 4;
 }
 .i4 {
+    text-align: start;
     grid-row-start: 1;
     grid-row-end: 4;
 }
+
 
 @media screen and (max-width: 900px) {
     .fill {
         width: auto;
     }
+}
+
+.icons {
+    color: #6B8B3A;
+    z-index: 2;
+    margin: 7px 0 0 5px;
 }

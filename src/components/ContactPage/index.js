@@ -45,20 +45,20 @@ const IndexPage = () => {
       </section>
       <section className={styles.form}>
         
-          <FaUser style={{color: '#6B8B3A', position: "absolute"}}/>
+          <FaUser className={[styles.icons, styles.i1].join(" ")}/>
           <input type="text" className={[styles.input, styles.i1].join(" ")} placeholder="Ime i prezime" ></input>
       
         
-          <FaEnvelope style={{color: '#6B8B3A', position: "absolute"}}/>
+          <FaEnvelope className={[styles.icons, styles.i2].join(" ")}/>
           <input type="email" className={[styles.input, styles.i2].join(" ")} placeholder="Email adresa" ></input>
         
         
-          <FaFlag style={{color: '#6B8B3A', position: "absolute"}}/>
+          <FaFlag className={[styles.icons, styles.i3].join(" ")}/>
           <input type="text" className={[styles.input, styles.i3].join(" ")} placeholder="Naslov" ></input>
         
         
-          <FaComment style={{color: '#6B8B3A', position: "absolute"}}/>
-          <input type="text" className={[styles.input, styles.i4].join(" ")} placeholder="Molimo upišite Vaš upit ovdje..." ></input>
+          <FaComment className={[styles.icons, styles.i4].join(" ")}/>
+          <textarea type="text" className={[styles.input, styles.i4].join(" ")} placeholder="Molimo upišite Vaš upit ovdje..." ></textarea>
         
       </section>
     </div>

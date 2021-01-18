@@ -56,10 +56,11 @@ ul {
     text-align: center;
     color: white;
     border: white 2px solid;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #333;
     margin-bottom: 20px;
     width: -webkit-fill-available;
+    overflow: hidden;
 }
 .input:focus {
     background-color: rgb(73, 73, 73);
