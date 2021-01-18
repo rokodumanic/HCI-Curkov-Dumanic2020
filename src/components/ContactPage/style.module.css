@@ -114,8 +114,8 @@ input:focus {
 
 @media screen and (max-width: 900px) {
     .fill {
-        width: 600px;
-        height: 600px;
+        width: 100%;
+        height: 100%;
     }
 }
 
