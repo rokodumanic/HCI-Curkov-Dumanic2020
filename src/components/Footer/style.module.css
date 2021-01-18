@@ -51,8 +51,20 @@ ul {
 }
 
 
-.mailinput ::placeholder{
+.input {
+    padding: 5px;
     text-align: center;
+    color: white;
+    border: white 2px solid;
+    border-radius: 10px;
+    background-color: #333;
+    margin-bottom: 20px;
+    width: -webkit-fill-available;
+    overflow: hidden;
+}
+.input:focus {
+    background-color: rgb(73, 73, 73);
+    transition: background-color .5s ease-in-out;
 }
 
 a {
@@ -63,4 +75,19 @@ a {
     height: 76px;
     width: auto;
     align-content: center;
+}
+
+.signup {
+    color: white;
+    background-color: #6B8B3A;
+    border: #6B8B3A 2px solid;
+    border-radius: 10px;
+    height: 40px;
+    width: auto;
+}
+
+.signup:hover {
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color .5s;
 }

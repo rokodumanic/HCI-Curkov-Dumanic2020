@@ -12,11 +12,11 @@ const Footer = () => (
 
         <div className={styles.links}>
             <ul className={styles.navigation}>
-                <h4 clssName={styles.istrazite}>ISTRAŽITE</h4>
+                <h4 className={styles.istrazite}>ISTRAŽITE</h4>
                 <li>
-                    {navTabs.map(({tab, to}) => (
-                        <Link to={to}>
-                            <a>{tab}<br/></a>
+                    {navTabs.map(({tab, to}, index) => (
+                        <Link key={index} to={to}>
+                            {tab}<br/>
                         </Link>)
                     )}
                 </li>
@@ -33,7 +33,7 @@ const Footer = () => (
                     </li>
                 <li className={styles.phone}>
                 <FaPhoneAlt style={{ marginBottom: '-2px', color: '#6B8B3A' }}/>
-                    <a href="tel:+385 98 765 4321">      +385 98 765 4321</a>
+                    <a href="tel:+385 00 000 0000">      +385 00 000 0000</a>
                 </li>
                 <li>
                     <FaEnvelope style={{ marginBottom: '-2px', color: '#6B8B3A' }}/>
@@ -43,11 +43,11 @@ const Footer = () => (
         </div>
         <div className={styles.newsletter}>
             <h4>NEWSLETTER</h4>
-            <p>Unesite svoju adresu elektroničke pošte da ne bi propustili novosti.</p>
+            <p style={{marginBottom: -5}}>Unesite svoju adresu elektroničke pošte da ne bi propustili novosti.</p>
             <br></br>
-            <input type="text" class="mailinput" placeholder="Vaša adresa" ></input>
+            <input type="text" className={styles.input} placeholder="Vaša adresa" ></input>
             <br></br>
-            <button>Pretplatite se</button>
+            <button className={styles.signup}>Pretplatite se</button>
         
         </div>
     </footer>

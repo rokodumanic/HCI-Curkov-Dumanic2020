@@ -1,41 +1,21 @@
-import React, { useState} from "react"
-import Helmet from "react-helmet"
-import styles from './style.module.css'
+import React from "react"
+import StandardPage from "../components/templates/StandardPage"
+import News from "../components/News"
 
-import ContactBar from "../components/ContactBar"
-import NavigationBar from "../components/NavigationBar"
-import Footer from "../components/Footer"
 
-const IndexPage = () => {
+// const News0 = React.lazy(() => import('../components/News'))
 
-  const [showScroll, setShowScroll] = useState(false)
-
-  const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 200){
-      setShowScroll(true)
-    } else if (showScroll && window.pageYOffset <= 200){
-      setShowScroll(false)
-    }
-  };
-
-  const scrollTop = () =>{
-    window.scrollTo({top: 0, behavior: 'smooth'});
-  };
-
-  if (typeof window !== `undefined`) {
-    window.addEventListener('scroll', checkScrollTop);
-  }
+const IndexPage = props => {
+  // const isSSR = typeof window === "undefined"
   return (
     <>
-      <button className={styles.top} style={{display: showScroll ? 'block' : 'none'}} onClick={scrollTop}>^</button>
-      <Helmet><title>OPG Tabar</title></Helmet>
-
-      <ContactBar />
-      <NavigationBar/>
-      <div style={{height: 1000, backgroundColor: "cyan"}}>
-        <div>OVDJE DOLAZE NOVOSTI I SVASTA</div>
-      </div>
-      <Footer />
+    {/* {!isSSR && ( */}
+      <StandardPage props={props}>
+        <React.Suspense fallback={<div>--- LOADING ---</div>}>
+          <News />
+        </React.Suspense>
+      </StandardPage>
+      {/* )} */}
     </>
   )
 }

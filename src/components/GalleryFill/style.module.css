@@ -4,8 +4,10 @@
 }
 
 .block {
-    padding: 20px;
+    max-width: 1300px;
+    padding: 40px;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .block > * > * >*:hover {

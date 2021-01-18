@@ -19,6 +19,9 @@
 .right > * {
     margin-left: 30px;
 }
+.right > *:hover :not(.selected) {
+    border-bottom: #6B8B3A 1px solid;
+}
 
 
 .left {
@@ -57,6 +60,13 @@
     }
 }
 
+@media only screen and (min-width: 1300px) {
+    .container {
+        width: 1300px;
+        margin: 0 auto;
+    }
+}
+
 .links {
     list-style: none;
     text-transform: uppercase;
@@ -67,6 +77,7 @@
     font-size: 20px;
     position: absolute;
     animation: animateToggle .2s ease-in-out;
+    margin-top: -1px;
 }
 
 .links > * {
@@ -89,7 +100,14 @@
     top: 0;
     position: sticky;
     z-index: 2;
+    background-color: white;
 }
+
+.selected {
+    color: #6B8B3A;
+    border-bottom: #6B8B3A 2px solid;
+}
+
 
 @keyframes animateToggle {
     0% {
