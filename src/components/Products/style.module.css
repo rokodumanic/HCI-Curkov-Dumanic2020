@@ -9,12 +9,24 @@
     border-radius: 5px;
     text-shadow: #6b8b3a 1px 0px;
     text-transform: uppercase;
-    background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(../../images/meat.jpg);
+}
+.cat1, .cat2, .cat3, .cat4 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
 }
-
+.cat1 {
+    background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(../../images/meat.jpg);
+}
+.cat2 {
+    background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(../../images/milk.jpg);
+}
+.cat3 {
+    background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(../../images/cheese.jpg);
+}
+.cat4 {
+    background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(../../images/service.jpg);
+}
 .category{
     color: #6b8b3a;
     font-size: 25px;
