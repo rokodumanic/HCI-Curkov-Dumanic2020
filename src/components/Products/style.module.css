@@ -4,11 +4,12 @@
     padding: 8px 10px;
     display: grid;
     align-content: center;
-    height: 200px;
+    height: auto;
     margin: 0 auto 20px;
     border-radius: 5px;
     text-shadow: #6b8b3a 1px 0px;
     text-transform: uppercase;
+
 }
 .cat1, .cat2, .cat3, .cat4 {
     background-repeat: no-repeat;
@@ -35,13 +36,14 @@
 }
 
 .pricing{
-display: grid;
-align-content: center;
-grid-template-columns: 20% 60% 20%;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 20% 60% 20%;
+    font-size: .90em;
 }
 
 .dots{
-    margin: .6em;
+    margin: .75em;
     border-bottom: 1px dashed grey;
     grid-column-start: 2;
     grid-column-end: 3;    
@@ -58,3 +60,9 @@ grid-template-columns: 20% 60% 20%;
     grid-column-start: 3;
     grid-column-end: 4;
 }
+
+@media only screen and (max-width: 670px){
+    .pricing {
+        grid-template-columns: 35% 30% 35%;
+    }
+ }
