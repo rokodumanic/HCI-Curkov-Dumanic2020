@@ -1,0 +1,68 @@
+.container{
+    border: #6b8b3a 1px solid;
+    max-width: 1200px;
+    padding: 8px 10px;
+    display: grid;
+    align-content: center;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+    text-shadow: #6b8b3a 1px 0px;
+    text-transform: uppercase;
+
+}
+.cat1, .cat2, .cat3, .cat4 {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.cat1 {
+    background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(../../images/meat.jpg);
+}
+.cat2 {
+    background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(../../images/milk.jpg);
+}
+.cat3 {
+    background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(../../images/cheese.jpg);
+}
+.cat4 {
+    background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(../../images/service.jpg);
+}
+.category{
+    color: #6b8b3a;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.pricing{
+    display: grid;
+    align-content: center;
+    grid-template-columns: 20% 60% 20%;
+    font-size: .90em;
+}
+
+.dots{
+    margin: .75em;
+    border-bottom: 1px dashed grey;
+    grid-column-start: 2;
+    grid-column-end: 3;    
+}
+
+.name{
+    text-align: right;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.price{
+    text-align: left;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+@media only screen and (max-width: 670px){
+    .pricing {
+        grid-template-columns: 35% 30% 35%;
+    }
+ }
