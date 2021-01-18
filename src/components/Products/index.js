@@ -4,29 +4,21 @@ import { meso, mlijeko, sirevi, usluge } from "../../constants/products";
  
 const Product = () => {
     return (
-        <div>
-            {meso.map(({ category }, index) => {
-                return (
-                    <div className={styles.container}>
-                        <span>{category}</span>
-                        {meso.map(({ name, price }, index) => {
-                            return(
-                                <div>
-                                    <div className={styles.pricing}>
-                                        <span className={styles.name}>{name}</span>
-                                        <span className={styles.price}>{price}</span>
-                                    </div>
-                                </div>
-                                )
-                            }
-                        )}
+        <div className={styles.container}>
+            <span className={styles.category}>Meso</span>
+            {meso.map(({ name, price }, index) => {
+                return(
+                    <div>
+                        <div className={styles.pricing}>
+                            <ul className={styles.name}>{name}</ul>
+                            <div className={styles.dots}></div>
+                            <ul className={styles.price}>{price}</ul>
+                        </div>
                     </div>
                     )
                 }
-            )
-            }
+            )}
         </div>
     )
 }
-
 export default Product
