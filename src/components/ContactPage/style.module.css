@@ -22,11 +22,11 @@
 
 .contacts {
     padding:15px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
     padding: 40px 20px;
-    display: flex;
+    display: grid;
+    align-content: center;
+    max-width: 1300px;
+    grid-template-columns: 33% 33% 33%;
     font-size: 16px;
     align-content: center;
     min-width: 100%;
@@ -36,7 +36,7 @@
     text-align: center;
     align-content: center;
     padding: 15px;
-    max-width: 300px;
+    max-width: 100%;
     opacity: 0.75;
 }
 .inside:hover {
@@ -74,10 +74,7 @@ li {
     padding-left: 25px;
     border: grey 1px solid;
     border-radius: 10px;
-    align-content: left;
     vertical-align: text-top;
-    resize: both;
-    overflow: auto;
 }
 
 input:focus {
@@ -85,14 +82,12 @@ input:focus {
 }
 
 .input.i4 {
-    padding-bottom:5em;
     resize:both;
 }
 
 .i1, .i2, .i3 {
     grid-column-start: 1;
     grid-column-end: 2;
-    max-height: fit-content;
 }
 .i4 {
     grid-column-start: 2;
@@ -119,12 +114,13 @@ input:focus {
 
 @media screen and (max-width: 900px) {
     .fill {
-        width: auto;
+        width: 600px;
+        height: 600px;
     }
 }
 
 .icons {
     color: #6B8B3A;
     z-index: 2;
-    margin: 7px 0 0 5px;
+    margin: .4em .7em 0 .4em;
 }
