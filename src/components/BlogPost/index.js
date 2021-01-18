@@ -7,8 +7,9 @@ import styles from "./style.module.css"
 
 
 const IndexPage = (props) => {
+  let item= news;
   if (typeof window !== `undefined`) {
-    const item = news.find(i=>i.to === window.location.pathname);
+    item = news.find(i=>i.to === window.location.pathname);
   }
   return (
     <StandardPage props={props}>
