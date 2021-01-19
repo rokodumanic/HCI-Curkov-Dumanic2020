@@ -14,13 +14,11 @@ class DemoCarousel extends Component {
                     return (
                         <Link key={index} to={to} state={{src, title}}>
                             <div className={styles.carousel}>
-                                <div className={styles.container}>
-                                <img className={styles.src} src={src} alt="" title="news picture"/>
-                                <div className={styles.content}>
-                                    <span className={styles.title}>{title}</span>
-                                    <p className={styles.spoiler}>{spoiler}</p>
-                                </div>
-                                </div>
+                                    <img className={styles.src} src={src} alt="" title="news picture"/>
+                                        <div className={styles.text}>
+                                            <span className={styles.title}>{title}</span>
+                                            <p className={styles.spoiler}>{spoiler}</p>
+                                        </div>
                             </div>
                         </Link>
                         )
