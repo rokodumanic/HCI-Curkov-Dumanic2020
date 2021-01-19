@@ -25,8 +25,8 @@ export const usluge = [
 ]
 
 export const category = [
-    {name: "Meso"},
-    {name: "Mlijeko"},
-    {name: "Sirevi"},
-    {name: "Ostale usluge"},
+    {name: "Meso", to: "/proizvodi/"},
+    {name: "Mlijeko", to: "/proizvodi/"},
+    {name: "Sirevi", to: "/proizvodi/"},
+    {name: "Ostale usluge", to: "/proizvodi/"},
 ]
