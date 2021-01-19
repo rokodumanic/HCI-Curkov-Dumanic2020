@@ -1,0 +1,30 @@
+.carousel{
+    height: 300px;
+    background-color: black;
+    width: 100
+}
+
+.src{
+    margin: auto;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    bottom: -9999px;
+    right: -9999px;
+}
+
+button:hover {
+    background-color: transparent !important;
+}
+
+.text{
+    position: absolute;
+    bottom: 2em;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5));
+}
+
+.title {
+    font-weight: 750;
+    text-shadow: #6B8B3A 1px 1px;
+}
