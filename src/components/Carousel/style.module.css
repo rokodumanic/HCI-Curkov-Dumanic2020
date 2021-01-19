@@ -1,0 +1,20 @@
+.carousel{
+    height: 300px;
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.src{
+    margin: auto;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    bottom: -9999px;
+    right: -9999px;
+}
+
+button:hover {
+    background-color: transparent !important;
+}
