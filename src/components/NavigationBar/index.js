@@ -39,7 +39,7 @@ const NavigationBar = (props) =>  {
                         </Link>)
                 }
                 )}
-                <FaSearch className={styles.search} style={{ marginBottom: '-2px' }} />
+                <FaSearch className={styles.search} style={{ marginBottom: '-2px', display: "none" }} />
             </div>
             <button className={styles.hamburger} onClick={toggleRightNav}>
                 {button}

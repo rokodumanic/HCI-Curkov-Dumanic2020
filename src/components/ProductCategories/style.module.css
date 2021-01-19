@@ -1,0 +1,67 @@
+.all {
+    display: grid;
+    text-align: center;
+    margin: 0 auto;
+    grid-column-gap: 3em;
+    grid-row-gap: 2em;
+    max-width: 900px;
+    margin-bottom: 20px;
+    text-shadow: #6b8b3a 1px 0px;
+}
+
+.container {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 10em;
+    width: 20em;
+    border: #6b8b3a 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.container:hover {
+    border: #6b8b3a 2px solid;
+}
+
+.cat1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.5), rgba(255,255,255,.1)), url(../../images/meat.jpg);
+
+}
+
+.cat2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.5), rgba(255,255,255,.1)), url(../../images/milk.jpg);
+
+}
+
+.cat3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-image: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.5), rgba(255,255,255,.1)), url(../../images/cheese.jpg);
+
+}
+
+.cat4{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-image: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.5), rgba(255,255,255,.1)), url(../../images/service.jpg);
+
+}
+
+.category {
+    position: relative;
+    top: 4em;
+    bottom: 6em;
+}

@@ -36,6 +36,12 @@ module.exports = {
       options: {
         pathToConfigModule: "src/utils/typography.js"
       }
+    },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -125
+      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
