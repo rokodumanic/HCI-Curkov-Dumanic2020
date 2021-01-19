@@ -11,7 +11,7 @@ const API_QUERY = "Kaštel+Novi"
 const IndexPage = () => {
     return (
     <div className={styles.container}>
-      <div className={styles.fill}>
+      <div id="map"className={styles.fill}>
         <iframe className={styles.map} src= {API_URL.replace("$key", API_KEY).replace("$query", API_QUERY)} allowFullScreen title="Google Maps" />
       </div>
       <section className={styles.contacts}>
@@ -24,7 +24,7 @@ const IndexPage = () => {
             <span className={styles.grey}> +385 00 000 0000</span>
           </li>
         </a>
-        <a href={API_URL.replace("$key", API_KEY).replace("$query", API_QUERY)} className={styles.inside}>
+        <a href="#map" className={styles.inside}>
           <li>
             <FaMapMarkerAlt style={{color: '#6B8B3A', fontSize: "40px", marginBottom: 10}}/>
           </li>
