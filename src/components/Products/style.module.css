@@ -11,11 +11,11 @@
     text-transform: uppercase;
 
 }
-.cat1, .cat2, .cat3, .cat4 {
+/* .cat1, .cat2, .cat3, .cat4 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-}
+} */
 .cat1 {
     background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(../../images/meat.jpg);
 }

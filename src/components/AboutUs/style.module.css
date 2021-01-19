@@ -1,4 +1,36 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+}
+
+.picture {
+    position: left;
+    border: grey 1px solid;
+    border-radius: 10px;
+    width: 150em;
+
+    background-image: url("../../images/about.jpg");
+}
+
+.text {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+@media only screen and (max-width: 900px){
+    .container {
+        display: block;
+    }
+    .picture {
+        margin: 0 auto;
+        align-content: center;
+        width: 150em;
+        height: 25em;
+        background-image: url("../../images/about.jpg");
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
