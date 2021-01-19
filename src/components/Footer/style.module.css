@@ -79,7 +79,7 @@ a {
 
 .signup {
     color: white;
-    background-color: #6B8B3A;
+    background-color: transparent;
     border: #6B8B3A 2px solid;
     border-radius: 10px;
     height: 40px;
@@ -88,6 +88,7 @@ a {
 
 .signup:hover {
     cursor: pointer;
-    background-color: transparent;
+    background-color: #6B8B3A;
     transition: background-color .5s;
+    font-weight: 700;
 }

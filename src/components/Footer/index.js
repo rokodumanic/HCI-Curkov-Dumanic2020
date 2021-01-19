@@ -43,12 +43,13 @@ const Footer = () => (
         </div>
         <div className={styles.newsletter}>
             <h4>NEWSLETTER</h4>
-            <p style={{marginBottom: -5}}>Unesite svoju adresu elektroničke pošte da ne bi propustili novosti.</p>
-            <br></br>
-            <input type="text" className={styles.input} placeholder="Vaša adresa" ></input>
-            <br></br>
-            <button className={styles.signup}>Pretplatite se</button>
-        
+            <form>
+                <p style={{marginBottom: -5}}>Unesite svoju adresu elektroničke pošte da ne bi propustili novosti.</p>
+                <br></br>
+                <input type="email" className={styles.input} placeholder="Vaša adresa" ></input>
+                <br></br>
+                <button className={styles.signup}>Pretplatite se</button>
+            </form>
         </div>
     </footer>
 )

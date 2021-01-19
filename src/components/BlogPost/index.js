@@ -11,6 +11,7 @@ const IndexPage = (props) => {
   if (typeof window !== `undefined`) {
     item = news.find(i=>i.to === window.location.pathname);
   }
+  
   return (
     <StandardPage props={props}>
     <div className={styles.body}>

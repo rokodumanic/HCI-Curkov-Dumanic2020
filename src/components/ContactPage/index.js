@@ -42,7 +42,7 @@ const IndexPage = () => {
           <span className={styles.grey}> info@opgtabar.hr</span>
         </a>
       </section>
-      <section className={styles.form}>
+      <form className={styles.form}>
         
           <FaUser className={[styles.icons, styles.i1].join(" ")}/>
           <input type="text" className={[styles.input, styles.i1].join(" ")} placeholder="Ime i prezime" ></input>
@@ -58,8 +58,9 @@ const IndexPage = () => {
         
           <FaComment className={[styles.icons, styles.i4].join(" ")}/>
           <textarea type="text" className={[styles.input, styles.i4].join(" ")} placeholder="Molimo upišite Vaš upit ovdje..." ></textarea>
-        
-      </section>
+
+          <button className={styles.submit}>Pošalji</button>
+      </form>
     </div>
   )
 }
