@@ -5,6 +5,10 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
  
 const ProductCategories = () => {
     return (
+        <div className={styles.content}>
+            <p className={styles.headname}>
+                Proizvodi
+            </p>
         <div className={styles.all}>
                 <AnchorLink to="proizvodi#meso" className={[styles.container, styles.cat1].join(" ")}>
                     <span className={styles.category}>meso</span>
@@ -18,6 +22,7 @@ const ProductCategories = () => {
                 <AnchorLink to="proizvodi#usluge" className={[styles.container, styles.cat4].join(" ")}>
                     <span className={styles.category}>usluge</span>
                 </AnchorLink>
+        </div>
         </div>
     )
 }

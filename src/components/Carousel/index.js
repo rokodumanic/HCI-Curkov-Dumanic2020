@@ -9,7 +9,7 @@ import styles from './style.module.css'
 class DemoCarousel extends Component {
     render() {
         return(
-            <Carousel autoPlay infiniteLoop useKeyboardArrows dynamicHeight interval={4000} transitionTime={300}>
+            <Carousel autoPlay infiniteLoop useKeyboardArrows dynamicHeight interval={3000} transitionTime={300}>
                 {news.slice(0,3).map(({ src, to, title, spoiler}, index) => {
                     return (
                         <Link key={index} to={to} state={{src, title}}>
