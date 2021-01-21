@@ -20,7 +20,7 @@ const IndexPage = props => {
           </p>
         </AboutUs>
         <ContactForm>
-          <p style={{textTransform: "uppercase", fontWeight: "750", paddingLeft: "1em"}}>
+          <p style={{textTransform: "uppercase", fontWeight: "750", paddingLeft: "3.75em"}}>
             <span style={{color: "#6b8b3a"}}>Imate pitanje? </span> Pošaljite nam upit
           </p>
         </ContactForm>
