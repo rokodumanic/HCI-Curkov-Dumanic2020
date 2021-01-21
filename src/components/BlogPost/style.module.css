@@ -36,6 +36,19 @@
     padding-top: 15px;
 }
 
+.tag{
+    padding-top: 15px;
+    margin-bottom: 0;
+    color: grey;
+    font-weight: 750;
+    border: transparent;
+    background-color: transparent;
+}
+.tag:hover {
+    color: #6b8b3a;
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 1100px){
     .body{
         padding: 15px 75px;

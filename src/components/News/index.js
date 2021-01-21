@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 const News = () =>  {
     return (
         <div>
-            {news.map(({ src, to, title, date, spoiler, text}, index) => {
+            {news.map(({ src, to, tag, title, date, spoiler, text}, index) => {
                     return (
                         <Link key={index} to={to} state={{src, title, date, text}}>
                         <div className={styles.container}>
@@ -14,6 +14,7 @@ const News = () =>  {
                             <div className={styles.content}>
                                 <span className={styles.title}>{title}</span>
                                 <span className={styles.date}>{date}</span>
+                                <span className={styles.tag}>{tag}</span>
                                 <p className={styles.spoiler}>{spoiler}</p>
                             </div>
                         </div>
