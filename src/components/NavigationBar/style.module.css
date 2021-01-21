@@ -36,6 +36,11 @@
     background-color: transparent;
 }
 
+.searchButton {
+    border: transparent;
+    background-color: transparent;
+}
+
 .logoSide {
     width: auto;
     margin: 0;
