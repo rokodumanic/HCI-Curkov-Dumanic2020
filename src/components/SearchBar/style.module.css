@@ -9,7 +9,7 @@
 .input {
     width: 30em;
     height: 2em;
-    padding-left: 25px;
+    padding-left: 15px;
     border: grey 1px solid;
     border-radius: 10px;
 }
@@ -19,6 +19,7 @@
     border-radius: 10px;
     margin-left: -36px;
     height: 36px;
+    width: 36px;
 }
 .search:hover {
     background-color: #6B8B3A !important;

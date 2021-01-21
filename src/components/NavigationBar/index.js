@@ -24,18 +24,19 @@ const NavigationBar = (props) =>  {
 
     if(search) {
         searchBar = <SearchBar />
-        searchButton = <IoClose style={{ marginBottom: '-5px', height: '20px', width: '20px' }} />
+        searchButton = <IoClose style={{ marginBottom: '-5px', height: '35px', width: '35px' }} />
     }
     else {
-        searchButton = <FaSearch style={{ marginBottom: '-2px' }} />
+        searchButton = <FaSearch style={{ marginBottom: '-2px', height: '25px', width: '25px' }} />
     }
 
     if(rightNav) {
         toggle = <Toggle style={styles.toggle}/>
-        button = <IoClose style={{ marginBottom: '-5px', height: '50px', width: '50px'}} />
+        button = <IoClose style={{ marginBottom: '-5px', height: '35px', width: '35px'}} />
+        searchButton = <FaSearch style={{ marginBottom: '-2px', height: '20px', width: '20px'}} />
     }
     else {
-        button = <FiMenu style={{ marginBottom: '-5px', height: '50px', width: '50px'}} />
+        button = <FiMenu style={{ marginBottom: '-5px', height: '35px', width: '35px'}} />
     }
 
     return (
@@ -59,6 +60,9 @@ const NavigationBar = (props) =>  {
             </div>
             <button className={styles.hamburger} onClick={toggleRightNav}>
                 {button}
+            </button>
+            <button className={styles.hamburger} onClick={toggleSearch}>
+                {searchButton}
             </button>
             
         </header>
